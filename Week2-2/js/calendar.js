@@ -10,5 +10,5 @@ for (var i=1; i < 32; i++) {
 		stringHTML += "<td>"+i+"</td>";
 	}
 }
-//stringHTML += "</tr>"
+stringHTML += "</tr>"
 hotelTable.innerHTML += stringHTML;
