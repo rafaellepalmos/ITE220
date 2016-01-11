@@ -9,7 +9,7 @@ $(function(){
 			url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + changeUnit + '&appid=2de143494c0b295cca9337e1e96b00e0',
 			success: function(data){
 				console.log(data.name);
-				$("#container").html("Temperature: " + data.main.temp + unit + "<br>Pressure: " + data.main.pressure + " hPa<br>Humidity: " + data.main.humidity + "%");	
+				$("#container").html("Temperature: " + data.main.temp + unit + "<br>Pressure: " + data.main.pressure + " hPa<br>Humidity: " + data.main.humidity + "%" + "<br>Weather: " + data.weather[0].description);	
 			}
 		});
 	}
